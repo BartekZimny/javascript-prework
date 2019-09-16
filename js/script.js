@@ -41,6 +41,9 @@ printMessage('Twój ruch to: ' + argPlayerMove);
 //Zasada
 
 function displayResult(argComputerMove, argPlayerMove){
+
+    console.log('moves:', argComputerMove, argPlayerMove);
+    
     if( argComputerMove == 'kamień' && argPlayerMove == 'papier'){
 	    return 'Ja wygrywam!';
     } 
