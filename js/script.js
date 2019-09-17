@@ -23,7 +23,6 @@ function playGame(playerInput){
 
     //Wybór gracza
 
-    //let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
     let argPlayerMove = getMoveName(playerInput);
 
     function getMoveName(playerInput){
@@ -79,22 +78,10 @@ function playGame(playerInput){
         return 'brak';	
         }
     }
+
     printMessage('Wynik: ' + displayResult(argComputerMove, argPlayerMove));
 
 }
-
-
-  
-  //let testButton1 = document.getElementById('play-rock');
-  //testButton1.addEventListener('click', playGame);
-
-  //let testButton2 = document.getElementById('play-paper');
-  //testButton2.addEventListener('click', playGame);
-
-  //let testButton3 = document.getElementById('play-scissors');
-  //testButton3.addEventListener('click', playGame);
-
-
 
   document.getElementById('play-rock').addEventListener('click', function(){
     playGame(1);
